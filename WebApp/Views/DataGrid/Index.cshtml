@@ -1,0 +1,10 @@
+﻿<ejs-grid id="Grid" height="272" allowPaging="true" allowSorting="true" toolbar="@(new List<string>() { "Add", "Edit", "Delete","Update","Cancel" })">
+  <e-data-manager url="/DataGrid/UrlDataSource" adaptor="UrlAdaptor" insertUrl="/DataGrid/Insert" updateUrl="/DataGrid/Update" removeUrl="/DataGrid/Delete"></e-data-manager>
+  <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID"  headerText="OrderID" isIdentity="true" defaultValue=0 isPrimaryKey="true"></e-grid-column>
+       <e-grid-column field="CustomerID"  headerText="CustomerID"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+
