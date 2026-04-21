@@ -24,22 +24,46 @@ The application uses a local NORTHWND database and focuses on practical server-s
 - Supported .NET SDK for ASP.NET Core
 - SQL Server LocalDB or Express
 
-## How to Run This Application
+## Running the Application
 
-1. Download or clone the repository.
-2. Open the solution in Visual Studio 2022.
-3. Restore NuGet packages and build the solution.
-4. Confirm the database connection string.
-5. Run the project and open the Grid page.
+Follow the steps below to clone the repository, restore dependencies, and run the ASP.NET Core application using the .NET CLI.
 
-## Documentation
+1. Clone the repository and navigate to the project directory:
 
-Refer to the Syncfusion ASP.NET Core Grid documentation for data binding, CRUD operations, and URL adaptor usage.
+   ```bash
+   git clone https://github.com/SyncfusionExamples/how-to-perform-CRUD-operations-on-AspCore-grid-and-save-to-database-1.git
+   cd how-to-perform-CRUD-operations-on-AspCore-grid-and-save-to-database-1\WebApp
+   ```
 
-## Suggested Repository Topics
+2. Restore the required NuGet packages:
 
-Add these GitHub topics to satisfy the topic requirement:
+   ```bash
+   dotnet restore
+   ```
 
-- aspnetcore
-- syncfusion-ej2-grid
-- crud-operations
+3. Update the database connection string:
+   - Open `appsettings.json`.
+   - Ensure the SQL Server connection string points to a valid **NORTHWND** database instance.
+
+4. Build the application:
+
+   ```bash
+   dotnet build
+   ```
+
+5. Run the application:
+
+   ```bash
+   dotnet run
+   ```
+
+6. Open a browser and navigate to the displayed application URL.
+
+Once the application loads, the Syncfusion EJ2 Grid page allows performing create, read, update, and delete operations, with all changes persisted to the SQL Server database.
+
+## Additional Resources
+
+- [Syncfusion ASP.NET Core Grid Connecting to DataBase](https://ej2.syncfusion.com/aspnetcore/documentation/grid/connecting-to-database)
+- [Syncfusion ASP.NET Core Grid Editing](https://ej2.syncfusion.com/aspnetcore/documentation/grid/editing/)
+- [Syncfusion ASP.NET Core Grid Documentation](https://ej2.syncfusion.com/aspnetcore/documentation/grid)
+- [Syncfusion ASP.NET Core Demos](https://ej2.syncfusion.com/aspnetcore)
