@@ -1,23 +1,45 @@
-# How to perform CRUD operations on AspCore grid and save to DataBase
+# How to Perform CRUD Operations on ASP.NET Core Grid and Save to Database
 
-A basic sample which shows how to perform the CRUD actions in Grid. Using Url Adaptor the Grid data is consumed from DB and updates the modified data to DB.
+## Repository Description
 
-**Documentation**:
+This repository contains an ASP.NET Core MVC sample that demonstrates CRUD operations using the Syncfusion EJ2 Grid with a SQL Server database.
 
-* https://ej2.syncfusion.com/aspnetcore/documentation/grid/data-binding/#datatable-with-crud-operations
-* https://ej2.syncfusion.com/aspnetcore/documentation/grid/editing/persisting-data-in-server#using-url-adaptor
+## Project Overview
 
-**Getting Started**:
+This sample shows how the Syncfusion EJ2 Data Grid integrates with an ASP.NET Core backend using the URL adaptor. Grid data is retrieved from and saved to a SQL Server database through MVC controller actions implemented with Entity Framework Core.
 
-* https://ej2.syncfusion.com/aspnetcore/documentation/grid/getting-started-core/#getting-started-with-aspnet-core
+The application uses a local NORTHWND database and focuses on practical server-side data handling such as create, read, update, delete, paging, and sorting operations.
+
+## Key Features
+
+- ASP.NET Core MVC application
+- Syncfusion EJ2 Grid with URL adaptor
+- Full CRUD operations
+- Entity Framework Core with SQL Server
+- Server-side paging and sorting
 
 ## Prerequisites
 
-Visual Studio 2022
+- Visual Studio 2022
+- Supported .NET SDK for ASP.NET Core
+- SQL Server LocalDB or Express
 
-## How to run this application?
+## How to Run This Application
 
-* Checkout this project to a location in your disk.
-* Open the solution file using the Visual Studio 2022.
-* Restore the NuGet packages by rebuilding the solution.
-* Run the project.
+1. Download or clone the repository.
+2. Open the solution in Visual Studio 2022.
+3. Restore NuGet packages and build the solution.
+4. Confirm the database connection string.
+5. Run the project and open the Grid page.
+
+## Documentation
+
+Refer to the Syncfusion ASP.NET Core Grid documentation for data binding, CRUD operations, and URL adaptor usage.
+
+## Suggested Repository Topics
+
+Add these GitHub topics to satisfy the topic requirement:
+
+- aspnetcore
+- syncfusion-ej2-grid
+- crud-operations
